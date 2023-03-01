@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Experimental Features</title>
+	<style>
+
+		body {
+			background-color: white;
+			color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+		}
+
+		.dark-mode {
+			background-color: black;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<h1>Experimental Features</h1>
+
+
+	<div>
+		<label for="dark-mode-slider">Dark Mode</label>
+		<input type="range" min="0" max="1" value="0" class="slider" id="dark-mode-slider">
+	</div>
+
+    <h2>Credits to some of the code on this experimental tab to chatGPT</h2>
+
+	<div>
+        <label for="practisePapers">Practice papers</label>
+        <input type="range" min="0" max="100" value="1" class="slider" id="practisePapers">
+      </div>
+      
+      <h3 id="practisePapersText"></h3>
+      
+      <script>
+        // Get the slider element and the text element
+        var slider = document.getElementById("practisePapers");
+        var text = document.getElementById("practisePapersText");
+      
+        // Listen for changes to the slider
+        slider.addEventListener("input", function() {
+          // Get the current value of the slider
+          var value = slider.value;
+      
+          // Update the text based on the value of the slider
+          if (value <= 33) {
+            text.innerHTML = "Minimal Practice papers";
+          } else if (value > 33 && value <= 66) {
+            text.innerHTML = "Average amount of practice papers";
+          } else {
+            text.innerHTML = "All practice papers";
+          }
+        });
+      </script>
+      
+
+
+    </script>    
+	<!--<script>
+		// Get the slider element
+		var practicePapers = document.getElementById("practise papers");
+
+		// Listen for changes to the slider
+		practicePapers.addEventListener("change", function() {
+			if (darkModeSlider.value == 1) {
+				// Enable the experimental feature
+				isDarkModeEnabled = true;
+				document.body.classList.add("dark-mode");
+			} else {
+				// Disable the experimental feature
+				isDarkModeEnabled = false;
+				document.body.classList.remove("dark-mode");
+			}
+		});
+	</script> -->
+
+
+	<script>
+		// Get the slider element
+		var darkModeSlider = document.getElementById("dark-mode-slider");
+
+		// Set the initial value of the experimental feature
+		var isDarkModeEnabled = false;
+
+		// Listen for changes to the slider
+		darkModeSlider.addEventListener("change", function() {
+			if (darkModeSlider.value == 1) {
+				// Enable the experimental feature
+				isDarkModeEnabled = true;
+				document.body.classList.add("dark-mode");
+			} else {
+				// Disable the experimental feature
+				isDarkModeEnabled = false;
+				document.body.classList.remove("dark-mode");
+			}
+		});
+	</script>
+</body>
+</html>
