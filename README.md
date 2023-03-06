@@ -1,10 +1,11 @@
 # Dusk
-Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+### Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
-Welcome to the Dusk GitHub Repo!
+### Welcome to the Dusk GitHub Repo!
 
-You can view the site at: https://ku-22.github.io/Dusk/
-If you're not sure what eveything does, see the wiki: https://github.com/KU-22/Dusk/wiki/
+### You can view the site at: https://ku-22.github.io/Dusk/
+
+## **If you're not sure what eveything does, see the wiki: https://github.com/KU-22/Dusk/wiki/**
 
 
 
